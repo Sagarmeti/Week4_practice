@@ -1,29 +1,21 @@
 public class Ex1 {
-    int n=100;  
-   static int num=200;
+    int a,b;
     
-    
-    public static void main(String[] args) {
-        
-        Example1 obj=new Example1();
-        Example1 obj2=new Example1();
-        
-        System.out.println(obj.n);  //100
-        System.out.println(obj.num);  // 200
-        obj.n=150;
-        obj.num=250;
-        System.out.println(obj.n);  //150
-        System.out.println(obj.num);  // 250
-        
-        System.out.println(obj2.n);  // 100
-        System.out.println(obj2.num);  // 250
-        
-        
-                 
-    
-        
-         
+    public void m1(int a,int b) {
+        this.a=a;
+        this.b=b;
     }
- 
+    
+    public void m2() {
+        System.out.println(a);
+        System.out.println(b);
+        
+    }
+    public static void main(String[] args) {
+    
+        Ex1 obj=new Ex1();
+        obj.m1(10, 20);
+        obj.m2();
+    }
+               
 }
- 
